@@ -20,5 +20,62 @@ $(document).ready(function(){
 <body>
 <jsp:include page="templates/api_header.jsp" /> 
 
+<div class="container-fluid">
+
+<div class="row">
+<div class="col-sm-4">
+
+<div class="form-group">
+<label>Create New Project</label>
+<div class="input-group">
+<input type="text" class="form-control" placeholder="Enter project Name"/>
+<span class="input-group-addon"><b>Create</b></b></span>
+</div><!--/.input-group  -->
+</div><!--/.form-group  -->
+
+</div><!--/.col-sm-4 -->
+</div><!--/.row -->
+
+<div class="row">
+
+<div class="col-sm-3">
+
+<div class="list-group">
+<div class="list-group-item bg-grey">
+<b>List of Projects</b>
+</div><!--/.list-group-item -->
+<div class="list-group-item">
+
+</div><!--/.list-group-item -->
+
+</div><!--/.list-group -->
+
+</div><!--/.col-sm-3 -->
+
+<div class="col-sm-9">
+
+
+<div class="form-group">
+<label>Create New Json File</label>
+<div class="input-group">
+<input type="text" class="form-control" placeholder="Enter Json FileName"/>
+<div class="input-group-btn">
+<button class="btn btn-default"><b>.json</b></button>
+<button class="btn btn-default bg-grey"><b>Create</b></button>
+</div><!--/.input-group-btn  -->
+</div><!--/.input-group  -->
+</div><!--/.form-group  -->
+
+
+</div><!--/.col-sm-9 -->
+
+</div><!--/.row -->
+
+</div><!--/.container-fluid -->
+
+
+
+
+
 </body>
 </html>

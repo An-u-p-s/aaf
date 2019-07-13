@@ -1,6 +1,11 @@
 /* bootstrap custom CSS ::: Start */
-body { font-size:11px; }
+body, .btn, .input-group-addon { font-size:11px; }
+.btn { padding:8.5px; }
+
 .navbar-brand { font-size:12px; }
 /* bootstrap custom CSS ::: End */
+
 .mtop15p { margin-top:15px; }
 .pad10p { padding:10px; }
+
+.bg-grey { background-color:#f5f5f5; }
