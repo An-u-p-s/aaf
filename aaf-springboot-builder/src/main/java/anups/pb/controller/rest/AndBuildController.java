@@ -1,4 +1,4 @@
-package anups.aaf.builder.controller;
+package anups.pb.controller.rest;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -9,7 +9,7 @@ import anups.aaf.builder.service.AndBuildService;
 
 @RestController
 @RequestMapping(value="/service",method=RequestMethod.POST)
-public class RestAPIController {
+public class AndBuildController {
 
   @RequestMapping(value="/androidClassesBuilder",method=RequestMethod.POST)
   public String androidClassesBuilder(HttpServletRequest request) {
@@ -21,5 +21,6 @@ public class RestAPIController {
 	return status;
   }
 	
+  
   
 }

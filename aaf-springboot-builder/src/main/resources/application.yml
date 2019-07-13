@@ -4,3 +4,8 @@ spring:
   mvc:
       view:
         prefix:  /pages/
+  datasource:
+    url: jdbc:mysql://localhost/test
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver

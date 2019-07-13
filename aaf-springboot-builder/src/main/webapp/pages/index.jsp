@@ -5,17 +5,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="styles/api/core-skeleton.css"/>
+<link rel="stylesheet" href="${PROJECT_URL}styles/api/core-skeleton.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="${PROJECT_URL}js/api/core-skeleton.js"></script>
-<script type="text/javascript">
-var PROJECT_URL = '${PROJECT_URL}';
-</script>
+<script type="text/javascript" src="${PROJECT_URL}js/api/core-skeleton.js"></script> 
+<script type="text/javascript" src="${PROJECT_URL}js/api/bootstrap-advanced.js"></script>
+<jsp:include page="templates/api_params.jsp" />
 <style>
 .srcpckge-header { padding:10px;background-color:#eee; }
 </style>
 <script type="text/javascript">
+$(document).ready(function(){
+ projectBuilder_navbar_sel('projectBuilder-navbar-androidprojects');
+});
 function form_androidClassBuilder(){
  var projectPackageName = document.getElementById("androidClassBuilder_form_projectPackageName").value; 
  var projectDrivePath = document.getElementById("androidClassBuilder_form_projectDrivePath").value; 
@@ -27,26 +29,15 @@ function form_androidClassBuilder(){
 
    } else if(response.startsWith("W")){ 
 
-   } else { echo "Invalid Status Response"; }
+   } else { /* "Invalid Status Response"; */ }
  });
 }
 </script>
 </head>
 <body>
 <jsp:include page="templates/api_header.jsp" />  
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#"><b>Android Starter Project</b></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#"><b>Home</b></a></li>
-    </ul>
-  </div>
-</nav>
   
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
       <!--  form-group -->

@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import anups.aaf.builder.util.DefaultBrowser;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"anups.aaf.builder"})
+@ComponentScan(basePackages = {"anups"})
 public class ApplicationStart  implements CommandLineRunner {
 
   

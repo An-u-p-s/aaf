@@ -1,2 +1,6 @@
+/* bootstrap custom CSS ::: Start */
+body { font-size:11px; }
+.navbar-brand { font-size:12px; }
+/* bootstrap custom CSS ::: End */
 .mtop15p { margin-top:15px; }
 .pad10p { padding:10px; }
