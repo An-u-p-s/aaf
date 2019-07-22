@@ -5,10 +5,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-import anups.aaf.builder.util.DefaultBrowser;
+import anups.dat.en.core.annotations.HtmlDataConfiguration;
+import anups.utility.core.browser.DefaultBrowser;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"anups"})
+@HtmlDataConfiguration(basePath={"dat"},defaultPackage="anups.aaf.builder.html")
 public class ApplicationStart  implements CommandLineRunner {
 
   

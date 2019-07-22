@@ -5,8 +5,10 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 import anups.aaf.builder.util.ServiceUtility;
+import anups.pb.controller.ui.test.Tester;
 
 @Controller
 public class UserInterfaceController {
@@ -25,5 +27,11 @@ public class UserInterfaceController {
     return "projects-json-home.jsp";
   }
   
+  @RequestMapping(value="/test")
+  public ModelAndView test(HttpServletRequest request) {
+	  ModelAndView model = new ModelAndView("test.jsp");	
+	  model.addObject("Testers", new Tester());
+    return model;
+  }
   
 }

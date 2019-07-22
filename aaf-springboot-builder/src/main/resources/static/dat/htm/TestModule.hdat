@@ -1,0 +1,5 @@
+ [Qwert] =>
+  <div id="hello1">${name}</div>
+  <div id="hello2">${city}</div>
+  <div id="hello3">${country}</div>;
+ [abcd] => <span id="abc">${name}, {city}</span>;
